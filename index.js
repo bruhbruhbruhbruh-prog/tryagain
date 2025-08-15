@@ -79,5 +79,5 @@ app.use((err, req, res, next) => {
     });
 });
 
-// For Vercel serverless functions
-exports.handler = app;
+// Export the Express app
+module.exports = app;
